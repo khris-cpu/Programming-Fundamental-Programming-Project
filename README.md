@@ -1,0 +1,3 @@
+# Description
+
+Submitting work by my Github, I have divided the work folder according to that week that I received. In the folder, there will be a problem for each level that will gradually make more difficult problems each week. Later will be the Source Code of The C Programming Language I have divided into Paths so that I can see all 2 methods of doing the same result and finally the output is in the form named Process and is divided according to different paths or methods. Usually both methods should get the same results.
