@@ -13,20 +13,9 @@ int main() {
     scanf("%d",&id);
 
     printf("+-------------+------------+-------------+\n\n");
-    printf("|      %s|         %s|        %d|\n\n",firstname,lastname,id);
-    printf("|%s      |%s         |        %d|\n\n",firstname,lastname,id);
-    printf("|%s      |         %s|        %d|\n\n",firstname,lastname,id);
+    printf("|\t%s|\t%s|\t%d|\n\n",firstname,lastname,id);
+    printf("|%s\t|%s\t|\t%d|\n\n",firstname,lastname,id);
+    printf("|%s\t|\t%s|\t%d|\n\n",firstname,lastname,id);
     printf("+-------------+------------+-------------+\n");
-    return 0;
-
-    // Hint 2
-
-    // printf("|");
-    // printf("        %s",firstname);
-    // printf("|");
-    // printf("    %s",lastname);
-    // printf("|");
-    // printf("\n");
-    printf("+-------------+------------+-------------+");
     return 0;
 }
