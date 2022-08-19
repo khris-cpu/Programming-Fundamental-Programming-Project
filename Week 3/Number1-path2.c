@@ -2,19 +2,20 @@
 
 int main(){
 
-    int num,i = 0;
+    int num,roll_col,i = 0;
     printf("Enter Your Number : ");
     scanf("%d",&num);
 
-    while(i < num){   
-        int j = 0;
-        while(j < num){
-            printf("*");
-            j = j + 1;
+    roll_col = num - 1;
+    for(int i = 0 ; i < roll_col; i++){
+        for(int j = 0 ; j < roll_col ; j++){
+            if(i < j){
+                printf(" ");
+            }else{
+                printf("*");
+            }
         }
-        printf("*\n");
-        i = i + 1;
+        printf("\n");
     }
-
     return 0;
 }
