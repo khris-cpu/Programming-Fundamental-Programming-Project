@@ -4,14 +4,12 @@ int main() {
 
     int num,i;
 
-    printf("Enter Numer : ");
     scanf("%d",&num);
-
     for (int j = 0; j < num ; j++){
-        for (int i = 0; i < num ; i++){
-        printf("*");
+        for (int i = 0; i <= j ; i++){
+            printf("*");
         }
-        printf("*\n");
+        printf("\n");
     }
     return 0;
 }
