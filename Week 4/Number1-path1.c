@@ -1,15 +1,14 @@
 #include<stdio.h>
+#include<string.h>
 
 int main() {
-    int num;
 
-    printf("Enter : ");
-    scanf("%d",&num);
+    char str[100],rev_str[100];
 
-    for(int i = 1; i <= num; i++){
-        for (int j = 1; j <= i ; j++){
-            printf("*");
-        }
-        printf("\n");
-    }
+    printf("Input : ");
+    scanf("%s",str);
+
+    printf("Output : %s",strrev(str));
+
+    return 0;
 }
