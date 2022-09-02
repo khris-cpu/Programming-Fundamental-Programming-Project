@@ -1,15 +1,18 @@
 #include<stdio.h>
 
-int main() {
-
-    int arr[100],i = 0,j;
-
-    while(i < 10){
-        scanf("%d",&arr[i]);
-        if((arr[i + 1]%2 != 0) && (arr[i - 1]%2 != 0)){
-            printf("%d ",arr[i]);
+int main(){
+    
+    int num;
+    scanf("%d",&num);
+    for(int y = - num + 1; y <= num - 1; y++){
+        for(int x = -num + 1; x <= num - 1; x++){
+            if((x + y <= 0 && x <= y && x <= 0 ) || (x + y >= 0 && x >= y && x >0)){
+                printf("*");
+            }else{
+                printf(" ");
+            }
         }
-        i = i  +1;
+        printf("\n");
     }
     return 0;
 }
