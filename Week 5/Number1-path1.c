@@ -1,17 +1,24 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 int main() {
-    int arr[100];
-    for(int i = 0 ; i < 10 ; i++ ){
-        scanf("%d",&arr[i]);
-    }
-    // for(int i = 0 ; i < 10; i++){
-    //     printf("%d ",arr[i]);
-    // }
-    for(int i = 1; i < 9; i++){
-        if((arr[i + 1]%2 != 0) && (arr[i - 1]%2 != 0)){
-            printf("%d ",arr[i]);
+
+    int num,rol_col;
+
+    scanf("%d",&num);
+
+    rol_col = num - 1;
+
+    for(int i = -rol_col ; i <= rol_col ; i++){
+        for(int j = -rol_col ; j <= rol_col ; j++){
+            if(abs(i) > abs(j)){
+                printf("  ");
+            }else{
+                printf("* ");
+            }
         }
+        printf("\n");
     }
+
     return 0;
 }
